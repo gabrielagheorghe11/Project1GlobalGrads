@@ -2,13 +2,56 @@
     margin:0;
     padding: 0;
 }
-.menu{
-    background: black;
-    color: white;
-    display: flex;
+head{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Zen Antique', serif;
+}
+
+.navbar{
+    background-color: rgb(220, 231, 226);
+    color: black;
+    display:flex;
     justify-content: space-evenly;
     align-items: center;
+
+
+ 
+}
+img{
+    margin-left: 0;
+    border: 2px solid black;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-self: flex-start;
+    padding: 0.1em  1em;
+    
+    
+
+    
+      
+  }  
+
+.div3 a {
+    float: left;
+    display: flex;
+    align-items: center;
+    color: black;
+    text-align: center;
     padding: 2rem;
+    text-decoration: none;
+    font-size: 20px;
+    
+    
+    
+}
 
 
+.fab{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+-webkit-background-clip: text;
+/* Also define standard property for compatibility */
+background-clip: text;
+-webkit-text-fill-color: transparent;
+font-size: 40px; /* change this to change the size*/
 }
