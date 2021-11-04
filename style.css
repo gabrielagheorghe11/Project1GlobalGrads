@@ -28,7 +28,7 @@ body{
   padding: 1rem 7rem;
   box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
 }
-.logo{
+.navbar_logo{
     border: 3px solid #010334;
     padding: 0.5rem 1.5rem;
     text-transform: uppercase;
@@ -36,7 +36,7 @@ body{
     margin-right: 3rem;
 }
 
-.div3 a {
+.navbar_elements a {
   color: #010334;
   text-align: center;
   padding: 2rem;
@@ -60,12 +60,12 @@ body{
   margin-right: 1rem;
 }
 
-.content{
+.body_content{
   width: 90%;
   margin: 0 auto;
   }
 
-.top{
+.content_top{
   display: flex;
   margin: 2rem;
   padding: 1rem;
@@ -82,20 +82,21 @@ body{
     font-size: 1.2rem;
   }
 
-#id1{border-radius: 4%;
+.content_top_element{
+  border-radius: 4px;
   width: 70rem;
   height: 28rem;
   margin-right: 2rem;
 }
 
 img{
-    border-radius: 2%;
+    border-radius: 4px;
     width: 50rem;
     height: 25rem;
     margin-right: 2rem;
 }
 
-.bottom{
+.content_bottom{
   display: flex;
   margin: 2rem;
   box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
@@ -107,7 +108,7 @@ img{
   margin-top:1rem;
 }
 
-.description1 a{
+.read-more-button a{
   display: inline-block;
   color: #fff;
   background-color: cornflowerblue;
@@ -117,12 +118,3 @@ img{
   margin-top: 15px;
 }
 
-.card a{
-  display: inline-block;
-  color: #fff;
-  background-color: cornflowerblue;
-  text-decoration: none;
-  padding: 10px 15px;
-  border-radius: 8px;
-  margin-top: 15px;
-}
