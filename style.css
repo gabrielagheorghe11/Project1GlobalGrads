@@ -3,16 +3,13 @@
   margin: 0;
   padding: 0;
   font-family: "Zen Antique", serif;
-  
-  
+  box-sizing: border-box;
 }
 head {
   font-family: "Source Sans Pro", sans-serif;
   font-family: "Zen Antique", serif;
 }
-body{
- 
-}
+
 .bar{
     display: flex;
     align-items: center;
@@ -41,6 +38,7 @@ body{
   text-align: center;
   padding: 2rem;
   text-decoration: none;
+
 }
 
 .fab {
@@ -60,16 +58,21 @@ body{
   margin-right: 1rem;
 }
 
-.body_content{
-  width: 90%;
+.container{
+  width: 100%;
   margin: 0 auto;
+  padding: 0.5rem;
+
   }
 
-.content_top{
+.row{
   display: flex;
   margin: 2rem;
   padding: 1rem;
   box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%); 
+  
+ 
+  
 }
   
   h5{
@@ -82,27 +85,48 @@ body{
     font-size: 1.2rem;
   }
 
-.content_top_element{
-  border-radius: 4px;
-  width: 70rem;
-  height: 28rem;
-  margin-right: 2rem;
-}
 
 img{
     border-radius: 4px;
-    width: 50rem;
-    height: 25rem;
+    max-width: 100%;
     margin-right: 2rem;
 }
 
-.content_bottom{
+.wrapper{
   display: flex;
   margin: 2rem;
   box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+
+}
+.row_input{
+  flex-grow: 1;
+}
+.background{
+  border-radius: 4px;
+  margin-right: 2rem;
+  max-width: 100%;
+  flex-grow: 2;
+  
+  
+}
+.full_image{
+  object-fit: cover;
 }
 
-.card{
+.post_column_left{
+  width: 100%;
+ box-sizing: border-box;
+
+}
+.post_column_right{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+
+
+.post_column_input{
   background-color: white;
   padding: 1rem;
   margin-top:1rem;
@@ -118,3 +142,16 @@ img{
   margin-top: 15px;
 }
 
+@media  (max-width:768px) and (min-width:320px) {
+  .wrapper{
+    flex-direction: column;
+    
+  }
+  .row{
+    flex-direction: column;
+  }
+  .row_full_image, img{
+    height: auto;
+  }
+  
+}
