@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Source+Sans+Pro&family=Zen+Antique&display=swap");
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Zen Antique", serif;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.navbar-nav {
+  width: 45rem;
+}
+
+.input-group {
+  width: 10rem;
+}
+/*# sourceMappingURL=bootstrap.css.map */
