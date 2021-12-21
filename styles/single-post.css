@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Source+Sans+Pro&family=Zen+Antique&display=swap");
+body {
+  font-family: "Montserrat",sans-serif;
+}
+
+.content {
+  font-family: Cambria,Georgia,serif;
+}
+
+.navbar-brand {
+  margin-right: -0.5rem;
+}
+
+.fab {
+  font-size: 1.2rem;
+}
+
+.right-link {
+  text-decoration: none;
+}
+/*# sourceMappingURL=single-post.css.map */
