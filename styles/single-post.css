@@ -3,8 +3,14 @@ body {
   font-family: "Montserrat",sans-serif;
 }
 
+.fixed-navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
 .content {
-  font-family: Cambria,Georgia,serif;
+  font-family: Cambria ,Georgia,serif;
 }
 
 .navbar-brand {
@@ -17,5 +23,131 @@ body {
 
 .right-link {
   text-decoration: none;
+  margin-right: 1rem;
+  font-size: 0.85rem;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.first-letter {
+  font-size: 3rem;
+}
+
+.strong-name {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+h6 {
+  font-weight: bold;
+  margin: 3% 0;
+}
+
+.my-dropdown-toggle::after {
+  content: none;
+}
+
+.footer {
+  background: #1b46c2;
+  font-size: 0.75rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .footer {
+    font-size: 0.5rem;
+  }
+}
+
+.card-text {
+  margin: 0.875rem 0 0.75rem 0;
+  font-size: 1.125rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lead-title {
+  font-size: 1rem;
+}
+
+.subscribe-button {
+  background-color: #1b46c2;
+  font-size: 0.8rem;
+  width: 8rem;
+}
+
+.latest-post {
+  position: relative;
+}
+
+.hide {
+  display: none;
+  position: absolute;
+  top: 20px;
+  height: 375px;
+  width: 415px;
+}
+
+.hide .card-text {
+  margin: 5% auto;
+}
+
+.hide .read-more {
+  font-size: 1rem;
+  color: #1b46c2;
+}
+
+.post:hover + .hide {
+  display: block;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hide {
+    height: 300px;
+    width: 295px;
+  }
+  .hide .card-text {
+    font-size: 0.8rem;
+  }
+  .hide .text-post {
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 1px) and (max-width: 767.99px) {
+  .post:hover + .hide {
+    display: none;
+  }
+}
+
+.chat-icon {
+  font-size: 4rem;
+  position: fixed;
+  right: 2rem;
+  bottom: 1rem;
+  color: black;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .chat-icon {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1px) and (max-width: 765.99px) {
+  .chat-icon {
+    font-size: 2rem;
+  }
+  .elrond-title {
+    font-size: 2rem;
+  }
 }
 /*# sourceMappingURL=single-post.css.map */
