@@ -126,6 +126,12 @@ a {
   .post:hover + .hide {
     display: none;
   }
+  .chat-icon {
+    font-size: 2rem;
+  }
+  .elrond-title {
+    font-size: 2rem;
+  }
 }
 
 .chat-icon {
@@ -139,15 +145,6 @@ a {
 @media (min-width: 768px) and (max-width: 991.98px) {
   .chat-icon {
     font-size: 3rem;
-  }
-}
-
-@media (min-width: 1px) and (max-width: 765.99px) {
-  .chat-icon {
-    font-size: 2rem;
-  }
-  .elrond-title {
-    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=single-post.css.map */

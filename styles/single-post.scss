@@ -26,7 +26,6 @@ body {
    font-size: 3rem;
  }
   
-
 .first-letter
 {
   font-size: 3rem;
@@ -58,7 +57,6 @@ h6{
   }
  }
 
-
 .card-text{
   margin: 0.875rem 0 0.75rem 0;
   font-size: 1.125rem;
@@ -75,7 +73,6 @@ h6{
   font-size: 0.8rem;
   width: 8rem;
 }
-
 
 .latest-post{
   position: relative;
@@ -98,15 +95,13 @@ h6{
   
 
 .post:hover + .hide{
-  display: block;
-  
+  display: block;  
 }
 
 @media (min-width: 992px) and (max-width: 1199px){
   .hide {
     height:300px ;
-    width: 295px;
-    
+    width: 295px; 
     .card-text{
       font-size: 0.8rem;
     }
@@ -115,10 +110,16 @@ h6{
     }
   }
 }
+
 @media (min-width: 1px) and (max-width: 767.99px){
   .post:hover + .hide{
-    display: none;
-    
+    display: none;  
+  }
+  .chat-icon{
+    font-size: 2rem;
+  }
+  .elrond-title{
+    font-size: 2rem;
   }
 }
 
@@ -128,18 +129,11 @@ h6{
   right: 2rem;
   bottom:1rem;
   color: black;
-
 }
+
 @media (min-width: 768px) and (max-width: 991.98px) { 
 .chat-icon{
   font-size:3rem ;
 }
  }
- @media (min-width: 1px) and (max-width: 765.99px){
-  .chat-icon{
-    font-size: 2rem;
-  }
-  .elrond-title{
-    font-size: 2rem;
-  }
- }
+ 
