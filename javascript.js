@@ -1,22 +1,22 @@
 //ex1
-// drinks= [
-//     {name: 'lemonade', price:50},
-//     {name:'lime', price:10}
-// ];
+drinks= [
+    {name: 'lemonade', price:50},
+    {name:'lime', price:10}
+];
 
 //Method 1 -> if , else if 
-// function sortDrinkByPrice(a, b){
-//     if(a.price < b.price){
-//         return -1;
-//     }
-//     else if (a.price > b.price){
-//         return 1;
-//     }
-//     else{
-//         return 0;
-//     }
-// }
-// console.log(drinks.sort(sortDrinkByPrice));
+function sortDrinkByPrice(a, b){
+    if(a.price < b.price){
+        return -1;
+    }
+    else if (a.price > b.price){
+        return 1;
+    }
+    else{
+        return 0;
+    }
+}
+console.log(drinks.sort(sortDrinkByPrice));
 
 
 //Method 2
@@ -47,17 +47,19 @@
 // let secondWord= 'bEEFGBuFBRrHgUHlNFYaYr';
 // let thirdWord = 'YFemHUFBbezFBYzFBYLleGBYEFGBMENTment';
 
-//Method 1 -> Q: why it doesn't work with includes() method?
-//  const extractLowerCase =(word) =>{
-//     let newWord= "";
-//     for(let i=0; i < word.length; i++){
-//         if (word[i].includes("abcdefghijklmnopqrstwxyz", 0)){
-//             newWord += (word[i]);
-//     }
-// }
-//     return newWord;
-//  };
-//  console.log(extractLowerCase("UcUNFYGaFYFYGtNUH"));
+// Method 1 
+ function extractLowerCase(word) {
+    let newWord = "";
+    for (let i = 0; i < word.length; i++) {
+        if ("abcdefghijklmnopqrstwxyz".includes(word[i])) {
+            newWord += (word[i]);
+        }
+    }
+    return newWord;
+}
+ console.log(extractLowerCase("UcUNFYGaFYFYGtNUH"));
+ console.log(extractLowerCase("bEEFGBuFBRrHgUHlNFYaYr"));
+ console.log(extractLowerCase("YFemHUFBbezFBYzFBYLleGBYEFGBMENTment"));
 
 
 //Method 2 -> toLowerCase()
@@ -76,18 +78,19 @@
 
 
 
-//ex3 ->  Q:Using the "=" operator occurs the error: Invalid left-hand side in assignment).
-//It was a mistake or is there another method to solve this exercise using just an equal?
-// let a = "2 == 2";
-// let b = "8 < 7";
-// let x = "5 == 13";
-// let y = "15 > 4";
+//ex3 -> 
+let a = "2 = 2";
+let b = "8 < 7";
+let x = "5 = 13";
+let y = "15 > 4";
+let result1 = a.replace("=", "==");
+let result2 = x.replace("=", "==");
 
 //Method 1
-// console.log(eval(a));
-// console.log(eval(b));
-// console.log(eval(x));
-// console.log(eval(y));
+console.log(eval(result1));
+console.log(eval(b));
+console.log(eval(result2));
+console.log(eval(y));
 
 //Method 2 -> using anonymous function
 // It should work but it doesn't(no library was imported)
@@ -98,23 +101,23 @@
 
 
 //ex4
-// const object1={
-//     "cyan":23,
-//     "magenta":12,
-//     "yellow":10
-// }
+const object1={
+    "cyan":23,
+    "magenta":12,
+    "yellow":10
+}
 
-// const object2={
-//     "cyan":432,
-//     "magenta":543,
-//     "yellow":777
-// }
+const object2={
+    "cyan":432,
+    "magenta":543,
+    "yellow":777
+}
 
-// const object3 ={
-//     "cyan":700,
-//     "magenta":700,
-//     "yellow":0
-// }
+const object3 ={
+    "cyan":700,
+    "magenta":700,
+    "yellow":0
+}
 
 // Method 1 
 // console.log("The maximum number of pages: " + Math.min(object1.cyan, object1.magenta, object1.yellow));
@@ -122,10 +125,10 @@
 // console.log("The maximum number of pages: " + Math.min(object3.cyan, object3.magenta, object3.yellow));
 
 // Method 2 -> Math() method
-// let array = Object.values(object1);
-// const min = Math.min(...array); // or using .apply 
-// const min = Math.min.apply(null, array);
-// console.log("The maximum number of pages " + min);
+let array = Object.values(object1);
+const min = Math.min(...array); // or using .apply 
+const minimum = Math.min.apply(null, array);
+console.log("The maximum number of pages " + min);
 
 // Method 3 -> forEach()
 // let array = Object.values(object2);
@@ -149,19 +152,19 @@
 
 
 //ex5
-//Method 1
-// let originalArray = [1, 3, 3, 5, 5, 5];
-// function getUnique(array){
-// let set = [];
-// for(i=0; i <array.length; i++){
-//     if (set.indexOf(array[i]) === -1){
-//         set.push(array[i]);
-//     }
-// }
-// return set;
-// }
-// let uniqueSet = getUnique(originalArray);
-// console.log(uniqueSet);
+// Method 1
+let originalArray = [1, 3, 3, 5, 5, 5];
+function getUnique(array){
+let set = [];
+for(i=0; i <array.length; i++){
+    if (set.indexOf(array[i]) === -1){
+        set.push(array[i]);
+    }
+}
+return set;
+}
+let uniqueSet = getUnique(originalArray);
+console.log(uniqueSet);
 
 
 //Method 2
